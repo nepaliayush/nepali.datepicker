@@ -1286,4 +1286,6 @@ var NepaliFunctions = (function () {
         }
     }),
         "undefined" != typeof module && module.hasOwnProperty("exports") ? (module.exports = nepaliDatePicker) : Object.defineProperty(Object.prototype, "nepaliDatePicker", { enumerable: !1, value: nepaliDatePicker });
-})();
+
+     
+    })();
