@@ -36,7 +36,7 @@ select#ndp-year-select {
     font-weight: bold !important;
     background-color: rgb(255, 255, 255);
     border: 1px solid #ffffff;
-    font-weight: 900;
+    font-weight: 800;
     font-size: large;
 }
 
@@ -44,20 +44,14 @@ div#ndp-nepali-box,
 div.ndp-nepali-box {
     width: 20rem;
     font-family: 'Questrial', sans-serif;
+    font-weight: 100;
     border: 1px solid #fffcfc;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     background-color: #fdfefe;
     padding: 0.2rem;
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, .2), 0 2px 4px 1px rgba(0, 0, 0, .14), 0 1px 2px 1px rgba(0, 0, 0, .12);
 }
 
-div#ndp-nepali-box table td:nth-child(7) a,
-div#ndp-nepali-box table th:nth-child(7) {
-    /* Your styles for the nth column */
-    /* Example text color */
-    color: red;
-    /* Add any other styles you want to apply */
-}
 
 div.ndp-nepali-calendar-div div.ndp-nepali-box {
     top: unset !important
@@ -88,54 +82,82 @@ div.ndp-nepali-box td.ndp-date {
     background: #ffffff;
     color: #0f0f0f
 }
-div#ndp-nepali-box td.ndp-selected,
-div.ndp-nepali-box td.ndp-selected {
-    border: 1px solid #2596be;
-    background-color: #2596be ;
-    border-radius: 20px;
-    text-align: center;
-}
 div#ndp-nepali-box td.ndp-current,
 div.ndp-nepali-box td.ndp-current {
     padding: 2px;
-    border: 1px solid #000000;
-    border-radius: 20px;
+    border: 1px dashed #949393;
+    border-radius: 8px;
     text-align: center;
     font-weight: 700;
 }
 
-
-
-
 div#ndp-nepali-box td.ndp-current a,
 div.ndp-nepali-box td.ndp-current a {
-    color: #000000;
-    display: block
+    color: #949393;
+    display: block;
+    font-weight: 300;
 }
 
-div#ndp-nepali-box td.ndp-date a,
-div.ndp-nepali-box td.ndp-date a{
-    display: block;
+
+div#ndp-nepali-box td.ndp-selected,
+div.ndp-nepali-box td.ndp-selected {
+    border: 1px dashed #030303;
+    /*background-color: #2596be ; */
     color: #000000;
-    text-decoration: none;
-    width: 20px;
+    border-radius: 8px;
     text-align: center;
-    font-weight: 600
+   
 }
 div#ndp-nepali-box td.ndp-selected a,
 div.ndp-nepali-box td.ndp-selected a {
     display: block;
-    color: #ffffff;
-    font-weight: 600;
+    color: #000000;
+    font-weight: 300;
     
+}
+/* CSS for ndp-selected when followed by ndp-current */
+div#ndp-nepali-box td.ndp-selected + td.ndp-current,
+div.ndp-nepali-box td.ndp-selected + td.ndp-current {
+    /* Add your custom styles here */
+    /* For example: */
+    border-color: red; /* Change border color */
+    /* Add any additional styling you want */
+}
+div#ndp-nepali-box td.ndp-selected a::after,
+div.ndp-nepali-box td.ndp-selected a::after {
+    display: block;
+    color: #e212b5;
+    font-weight: 300;
+    
+}
+div#ndp-nepali-box td.ndp-date a,
+div.ndp-nepali-box td.ndp-date a{
+    display: block;
+    color: #949393;
+    text-decoration: none;
+    width: 20px;
+    text-align: center;
+    font-weight: 300;
 }
 /* Apply styles for the nth child */
 div#ndp-nepali-box table td:nth-child(7).ndp-selected a,
 div.ndp-nepali-box table td:nth-child(7).ndp-selected a {
     display: block;
     color: #ffffff;
-    font-weight: 600;
+    font-weight: 300;
 }
+
+
+div#ndp-nepali-box table td:nth-child(7) a,
+div#ndp-nepali-box table th:nth-child(7) {
+    /* Your styles for the nth column */
+    /* Example text color */
+    color: rgb(252, 92, 92) !important;
+    /* Add any other styles you want to apply */
+}
+
+
+
 
 a.ndp-disabled {
     color: #ccc !important
@@ -143,22 +165,23 @@ a.ndp-disabled {
 
 div#ndp-nepali-box table td:nth-child(-n+6).ndp-current:hover,
 div#ndp-nepali-box table td:nth-child(-n+6).ndp-date:hover {
-    border: 1px solid #2596be;
-    background-color: #2596be;
-    border-radius: 20px;
+    border: 1px dashed #949393;
+    background-color: #ffffff; 
+    color: #949393!important;
+    border-radius: 8px;
 }
 
 div#ndp-nepali-box table td:nth-child(7).ndp-current:hover,
 div#ndp-nepali-box table td:nth-child(7).ndp-date:hover {
-    color: #ffffff;
-    border: 1px solid #2596be;
-    background-color: #2596be;
-    border-radius: 20px;
+    color: rgb(252, 92, 92);
+    border: 1px dashed rgb(252, 92, 92);
+    background-color: #ffffff;
+    border-radius: 8px;
 }
 
 div#ndp-nepali-box td.ndp-date:hover a,
 div.ndp-nepali-box td.ndp-date:hover a {
-    color: #ffffff;
+    color: #949393;
 }
 
 div#ndp-nepali-box table,
@@ -188,16 +211,17 @@ div.ndp-nepali-box a {
 .ndp-days th,
 .ndp-header {
     text-align: center;
-    font-weight: 600
+    font-weight: 300;
 }
 
 .ndp-header {
     background: #ffffff;
     color: #000000;
     font-size: 16px;
+    font-weight: 400;
     padding: 2px;
     line-height: 20px;
-    margin: 2px;
+    margin: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center
