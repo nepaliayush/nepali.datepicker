@@ -77,14 +77,14 @@ div.ndp-nepali-box td.ndp-link-disabled a {
 
 div#ndp-nepali-box td.ndp-date,
 div.ndp-nepali-box td.ndp-date {
-    padding: 0.6rem;
+    padding: 0rem;
     border: 1px solid #ffffff;
     background: #ffffff;
     color: #0f0f0f
 }
 div#ndp-nepali-box td.ndp-current,
 div.ndp-nepali-box td.ndp-current {
-    padding: 2px;
+    padding: 0;
     border: 1px dashed #949393;
     border-radius: 8px;
     text-align: center;
@@ -93,6 +93,7 @@ div.ndp-nepali-box td.ndp-current {
 
 div#ndp-nepali-box td.ndp-current a,
 div.ndp-nepali-box td.ndp-current a {
+    padding: 0.6rem;
     color: #949393;
     display: block;
     font-weight: 300;
@@ -106,13 +107,15 @@ div.ndp-nepali-box td.ndp-selected {
     color: #000000;
     border-radius: 8px;
     text-align: center;
-   
+ 
+   padding: 0rem;
 }
 div#ndp-nepali-box td.ndp-selected a,
 div.ndp-nepali-box td.ndp-selected a {
     display: block;
     color: #000000;
     font-weight: 300;
+    padding: 0.6rem;
     
 }
 /* CSS for ndp-selected when followed by ndp-current */
@@ -132,6 +135,7 @@ div.ndp-nepali-box td.ndp-selected a::after {
 }
 div#ndp-nepali-box td.ndp-date a,
 div.ndp-nepali-box td.ndp-date a{
+    padding: 0.6rem;
     display: block;
     color: #949393;
     text-decoration: none;
