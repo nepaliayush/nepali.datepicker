@@ -42,7 +42,7 @@ select#ndp-year-select {
 
 div#ndp-nepali-box,
 div.ndp-nepali-box {
-    width: 20rem;
+    width: 18rem;
     font-family: 'Questrial', sans-serif;
     font-weight: 100;
     border: 1px solid #fffcfc;
@@ -135,7 +135,7 @@ div.ndp-nepali-box td.ndp-selected a::after {
 }
 div#ndp-nepali-box td.ndp-date a,
 div.ndp-nepali-box td.ndp-date a{
-    padding: 0.6rem;
+    padding: 0.45rem;
     display: block;
     color: #949393;
     text-decoration: none;
@@ -190,7 +190,7 @@ div.ndp-nepali-box td.ndp-date:hover a {
 
 div#ndp-nepali-box table,
 div.ndp-nepali-box table {
-    width: 100%
+    width: 60%
 }
 
 div#ndp-nepali-box table,
